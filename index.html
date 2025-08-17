@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -16,8 +15,8 @@
         
         <!-- Abas de navegação -->
         <div class="tabs">
-            <button class="tab-button active" onclick="showTab('inventory')">Inventário Diário</button>
-            <button class="tab-button" onclick="showTab('dryBoxes')">Caixas Secas</button>
+            <button class="tab-button active" onclick="showTab('inventory')">Lançar Estoque Diário</button>
+            <button class="tab-button" onclick="showTab('dryBoxes')">Lançar Caixas Secas</button>
             <button class="tab-button" onclick="showTab('manager')">Gestores</button>
         </div>
 
@@ -34,8 +33,8 @@
                     <select id="state" name="state" required onchange="updateNetworksByState(); updateUsersByState()">
                         <option value="">Selecione um estado</option>
                         <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                        <option value="São Paulo">São Paulo</option>
-                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Paraiba">Paraíba</option>
+                        <option value="Rio de Janeiro">Pernambuco</option>
                         <option value="Minas Gerais">Minas Gerais</option>
                         <option value="Bahia">Bahia</option>
                     </select>
@@ -101,7 +100,7 @@
         <!-- Aba de Caixas Secas -->
         <div id="dryBoxesTab" class="tab-content">
             <div class="countdown-container">
-                <h3>Tempo restante para envio (próxima segunda-feira):</h3>
+                <h3>Tempo restante para envio </h3>
                 <div id="dryBoxesCountdown" class="countdown"></div>
             </div>
 
@@ -122,6 +121,7 @@
                     <label for="dryUser">Usuário:</label>
                     <select id="dryUser" name="dryUser" required>
                         <option value="">Selecione um usuário</option>
+                    
                     </select>
                 </div>
 
@@ -594,3 +594,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
