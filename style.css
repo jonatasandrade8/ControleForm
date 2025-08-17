@@ -22,11 +22,11 @@ body {
 }
 
 .header-container {
-    display: flex;
+    display: -;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 3px;
 }
 
 .logo {
@@ -261,6 +261,7 @@ button:hover {
 }
 
 .login-container {
+    margin: 0 auto;
     background-color: #ffffff;
     padding: 40px;
     border-radius: 10px;
